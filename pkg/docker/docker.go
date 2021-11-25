@@ -8,6 +8,7 @@ import (
 	"net/url"
 	"strings"
 
+	"github.com/SAP/jenkins-library/pkg/log"
 	"github.com/SAP/jenkins-library/pkg/piperutils"
 
 	pkgutil "github.com/GoogleContainerTools/container-diff/pkg/util"
@@ -30,6 +31,7 @@ func CreateDockerConfigJSON(registryURL, username, password, targetPath, configP
 	dockerConfig := map[string]interface{}{}
 	if exists, _ := utils.FileExists(configPath); exists {
 		dockerConfigContent, err := utils.FileRead(configPath)
+		log.Entry().Infof("Create the docker dockerConfigContent: %s", dockerConfigContent)
 		if err != nil {
 			return "", fmt.Errorf("failed to read file '%v': %w", configPath, err)
 		}
@@ -39,12 +41,13 @@ func CreateDockerConfigJSON(registryURL, username, password, targetPath, configP
 			return "", fmt.Errorf("failed to unmarshal json file '%v': %w", configPath, err)
 		}
 	}
-
 	credentialsBase64 := base64.StdEncoding.EncodeToString([]byte(fmt.Sprintf("%v:%v", username, password)))
 	dockerAuth := AuthEntry{Auth: credentialsBase64}
-
+	log.Entry().Infof("Create the docker docker auth: %s", dockerAuth)
 	if dockerConfig["auths"] == nil {
 		dockerConfig["auths"] = map[string]AuthEntry{registryURL: dockerAuth}
+		log.Entry().Infof("Create the docker docker auths: %s", dockerConfig["auths"])
+
 	} else {
 		authEntries, ok := dockerConfig["auths"].(map[string]interface{})
 		if !ok {
@@ -58,12 +61,11 @@ func CreateDockerConfigJSON(registryURL, username, password, targetPath, configP
 	if err != nil {
 		return "", fmt.Errorf("failed to marshal Docker config.json: %w", err)
 	}
-
 	err = utils.FileWrite(targetPath, jsonResult, 0666)
 	if err != nil {
 		return "", fmt.Errorf("failed to write Docker config.json: %w", err)
 	}
-
+	log.Entry().Infof("Create the docker docker targetPath: %s", targetPath)
 	return targetPath, nil
 }
 
