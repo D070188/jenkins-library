@@ -217,8 +217,13 @@ func correctWhitesourceDockerConfigEnvVar(config *ScanOptions, utils whitesource
 	path := config.DockerConfigJSON
 	if len(path) > 0 {
 		log.Entry().Infof("Docker credentials configuration: %v", path)
+		log.Entry().Infof("Create the docker config.ScanImageRegistryURL: %s", config.ScanImageRegistryURL)
+		log.Entry().Infof("Create the docker config.ContainerRegistryUser: %s", config.ContainerRegistryUser)
+		log.Entry().Infof("Create the docker config.ContainerRegistryPassword: %s", config.ContainerRegistryPassword)
+		log.Entry().Infof("Create the docker config.DockerConfigJSON: %s", config.DockerConfigJSON)
 		if len(config.ScanImageRegistryURL) > 0 && len(config.ContainerRegistryUser) > 0 && len(config.ContainerRegistryPassword) > 0 {
 			var err error
+			log.Entry().Infof("Create the docker before create docker confgi json",)
 			path, err = piperDocker.CreateDockerConfigJSON(config.ScanImageRegistryURL, config.ContainerRegistryUser, config.ContainerRegistryPassword, "", config.DockerConfigJSON, utils)
 			if err != nil {
 				log.Entry().Warningf("failed to update Docker config.json: %v", err)
@@ -227,6 +232,7 @@ func correctWhitesourceDockerConfigEnvVar(config *ScanOptions, utils whitesource
 		path, _ := utils.Abs(path)
 		// use parent directory
 		path = filepath.Dir(path)
+		log.Entry().Infof("Create the docker after create docker confgi json path: %s", path)
 		os.Setenv("DOCKER_CONFIG", path)
 	} else {
 		log.Entry().Info("Docker credentials configuration: NONE")
