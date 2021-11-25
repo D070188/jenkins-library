@@ -216,7 +216,7 @@ func runWhitesourceScan(config *ScanOptions, scan *ws.Scan, utils whitesourceUti
 func correctWhitesourceDockerConfigEnvVar(config *ScanOptions, utils whitesourceUtils) {
 	path := config.DockerConfigJSON
 	if len(path) > 0 {
-		log.Entry().Infof("Docker credentials configuration: %v", path)
+		log.Entry().Infof("Docker credentials configuration: %s", path)
 		log.Entry().Infof("Create the docker config.ScanImageRegistryURL: %s", config.ScanImageRegistryURL)
 		log.Entry().Infof("Create the docker config.ContainerRegistryUser: %s", config.ContainerRegistryUser)
 		log.Entry().Infof("Create the docker config.ContainerRegistryPassword: %s", config.ContainerRegistryPassword)
