@@ -367,7 +367,7 @@ func resolveProductToken(config *ScanOptions, sys whitesource) error {
 	if config.ProductToken != "" {
 		return nil
 	}
-	log.Entry().Infof("Attempting to resolve product token for product '%s'..", config.ProductName)
+	log.Entry().Infof("Attempting to resolve product token for product do something '%s'..", config.ProductName)
 	product, err := sys.GetProductByName(config.ProductName)
 	if err != nil && config.CreateProductFromPipeline {
 		product = ws.Product{}
