@@ -1,0 +1,1675 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Protecode Vulnerability Report</title>
+	<style type="text/css">
+	body {
+		font-family: Arial, Verdana;
+	}
+	table {
+		border-collapse: collapse;
+	}
+	div.code {
+		font-family: "Courier New", "Lucida Console";
+	}
+	th {
+		border-top: 1px solid #ddd;
+	}
+	th, td {
+		padding: 12px;
+		text-align: left;
+		border-bottom: 1px solid #ddd;
+		border-right: 1px solid #ddd;
+	}
+	tr:nth-child(even) {
+		background-color: #f2f2f2;
+	}
+	.bold {
+		font-weight: bold;
+	}
+	.green{
+		color: olivedrab;
+	}
+	.red{
+		color: orangered;
+	}
+	.nobullets {
+		list-style-type:none;
+		padding-left: 0;
+		padding-bottom: 0;
+		margin: 0;
+	}
+	.green-cell {
+		background-color: #e1f5a9;
+		padding: 5px
+	}
+	.yellow-cell {
+		background-color: #ffff99;
+		padding: 5px
+	}
+	.red-cell {
+		background-color: #ffe5e5;
+		padding: 5px
+	}
+	.grey-cell{
+		background-color: rgba(212, 212, 212, 0.7);
+		padding: 5px;
+	}
+	.black-cell{
+		background-color: rgba(0, 0, 0, 0.75);
+		padding: 5px;
+	}
+	</style>
+</head>
+<body>
+	<h1>Protecode Vulnerability Report</h1>
+	<h2>
+		<span>
+		Product name: t.tar<br />
+		Product ID: 4486<br />
+		</span>
+	</h2>
+	<div>
+		<h3>
+		Vulnerabilities: 226<br />
+		Major Vulnerabilities: 142<br />
+		Minor Vulnerabilities: 84<br />
+		Triaged Vulnerabilities: 0<br />
+		Excluded Vulnerabilities: 1<br />
+		</h3>
+		<span></span>
+	</div>
+	<p>Snapshot taken: Nov 25, 2021 - 13:16:32 CET</p>
+	<table>
+	<tr>
+		<th>Entry #</th>
+		<th>Issue CVE</th>
+		<th>CVSS Score</th>
+		<th>CVSS v3 Score</th>
+	</tr>
+	
+	<tr>
+		<td>1</td>
+		<td>CVE-2014-6271</td>
+		<td>10</td>
+		<td>0</td>
+	</tr>
+	
+	<tr>
+		<td>2</td>
+		<td>CVE-2014-6277</td>
+		<td>10</td>
+		<td>0</td>
+	</tr>
+	
+	<tr>
+		<td>3</td>
+		<td>CVE-2014-6278</td>
+		<td>10</td>
+		<td>0</td>
+	</tr>
+	
+	<tr>
+		<td>4</td>
+		<td>CVE-2014-7169</td>
+		<td>10</td>
+		<td>0</td>
+	</tr>
+	
+	<tr>
+		<td>5</td>
+		<td>CVE-2014-7186</td>
+		<td>10</td>
+		<td>0</td>
+	</tr>
+	
+	<tr>
+		<td>6</td>
+		<td>CVE-2014-7187</td>
+		<td>10</td>
+		<td>0</td>
+	</tr>
+	
+	<tr>
+		<td>7</td>
+		<td>CVE-2016-9401</td>
+		<td>2.1</td>
+		<td>5.5</td>
+	</tr>
+	
+	<tr>
+		<td>8</td>
+		<td>CVE-2016-0682</td>
+		<td>6.9</td>
+		<td>7.8</td>
+	</tr>
+	
+	<tr>
+		<td>9</td>
+		<td>CVE-2016-0689</td>
+		<td>6.9</td>
+		<td>7.8</td>
+	</tr>
+	
+	<tr>
+		<td>10</td>
+		<td>CVE-2016-0692</td>
+		<td>6.9</td>
+		<td>7.8</td>
+	</tr>
+	
+	<tr>
+		<td>11</td>
+		<td>CVE-2016-0694</td>
+		<td>6.9</td>
+		<td>7.8</td>
+	</tr>
+	
+	<tr>
+		<td>12</td>
+		<td>CVE-2016-3418</td>
+		<td>6.9</td>
+		<td>7.8</td>
+	</tr>
+	
+	<tr>
+		<td>13</td>
+		<td>CVE-2011-5325</td>
+		<td>5</td>
+		<td>7.5</td>
+	</tr>
+	
+	<tr>
+		<td>14</td>
+		<td>CVE-2014-9645</td>
+		<td>2.1</td>
+		<td>5.5</td>
+	</tr>
+	
+	<tr>
+		<td>15</td>
+		<td>CVE-2016-2147</td>
+		<td>5</td>
+		<td>7.5</td>
+	</tr>
+	
+	<tr>
+		<td>16</td>
+		<td>CVE-2016-2148</td>
+		<td>7.5</td>
+		<td>9.8</td>
+	</tr>
+	
+	<tr>
+		<td>17</td>
+		<td>CVE-2017-16544</td>
+		<td>6.5</td>
+		<td>8.8</td>
+	</tr>
+	
+	<tr>
+		<td>18</td>
+		<td>CVE-2016-3189</td>
+		<td>4.3</td>
+		<td>6.5</td>
+	</tr>
+	
+	<tr>
+		<td>19</td>
+		<td>CVE-2017-18018</td>
+		<td>1.9</td>
+		<td>4.7</td>
+	</tr>
+	
+	<tr>
+		<td>20</td>
+		<td>CVE-2016-2781</td>
+		<td>2.1</td>
+		<td>6.5</td>
+	</tr>
+	
+	<tr>
+		<td>21</td>
+		<td>CVE-2015-1865</td>
+		<td>3.3</td>
+		<td>4.7</td>
+	</tr>
+	
+	<tr>
+		<td>22</td>
+		<td>CVE-2016-2037</td>
+		<td>4.3</td>
+		<td>6.5</td>
+	</tr>
+	
+	<tr>
+		<td>23</td>
+		<td>CVE-2015-1197</td>
+		<td>1.9</td>
+		<td>0</td>
+	</tr>
+	
+	<tr>
+		<td>24</td>
+		<td>CVE-2017-8817</td>
+		<td>7.5</td>
+		<td>9.8</td>
+	</tr>
+	
+	<tr>
+		<td>25</td>
+		<td>CVE-2016-3739</td>
+		<td>2.6</td>
+		<td>5.3</td>
+	</tr>
+	
+	<tr>
+		<td>26</td>
+		<td>CVE-2017-1000101</td>
+		<td>4.3</td>
+		<td>6.5</td>
+	</tr>
+	
+	<tr>
+		<td>27</td>
+		<td>CVE-2016-0755</td>
+		<td>5</td>
+		<td>7.3</td>
+	</tr>
+	
+	<tr>
+		<td>28</td>
+		<td>CVE-2016-4802</td>
+		<td>6.9</td>
+		<td>7.8</td>
+	</tr>
+	
+	<tr>
+		<td>29</td>
+		<td>CVE-2017-7407</td>
+		<td>2.1</td>
+		<td>2.4</td>
+	</tr>
+	
+	<tr>
+		<td>30</td>
+		<td>CVE-2018-1000007</td>
+		<td>5</td>
+		<td>9.8</td>
+	</tr>
+	
+	<tr>
+		<td>31</td>
+		<td>CVE-2017-1000100</td>
+		<td>4.3</td>
+		<td>6.5</td>
+	</tr>
+	
+	<tr>
+		<td>32</td>
+		<td>CVE-2017-1000254</td>
+		<td>5</td>
+		<td>7.5</td>
+	</tr>
+	
+	<tr>
+		<td>33</td>
+		<td>CVE-2017-1000257</td>
+		<td>6.4</td>
+		<td>9.1</td>
+	</tr>
+	
+	<tr>
+		<td>34</td>
+		<td>CVE-2014-8151</td>
+		<td>5.8</td>
+		<td>0</td>
+	</tr>
+	
+	<tr>
+		<td>35</td>
+		<td>CVE-2016-5419</td>
+		<td>5</td>
+		<td>7.5</td>
+	</tr>
+	
+	<tr>
+		<td>36</td>
+		<td>CVE-2016-5420</td>
+		<td>5</td>
+		<td>7.5</td>
+	</tr>
+	
+	<tr>
+		<td>37</td>
+		<td>CVE-2016-5421</td>
+		<td>7.5</td>
+		<td>9.8</td>
+	</tr>
+	
+	<tr>
+		<td>38</td>
+		<td>CVE-2016-7141</td>
+		<td>5</td>
+		<td>7.5</td>
+	</tr>
+	
+	<tr>
+		<td>39</td>
+		<td>CVE-2016-7167</td>
+		<td>7.5</td>
+		<td>9.8</td>
+	</tr>
+	
+	<tr>
+		<td>40</td>
+		<td>CVE-2013-2494</td>
+		<td>4.9</td>
+		<td>0</td>
+	</tr>
+	
+	<tr>
+		<td>41</td>
+		<td>CVE-2015-8605</td>
+		<td>5.7</td>
+		<td>6.5</td>
+	</tr>
+	
+	<tr>
+		<td>42</td>
+		<td>CVE-2016-2774</td>
+		<td>7.1</td>
+		<td>5.9</td>
+	</tr>
+	
+	<tr>
+		<td>43</td>
+		<td>CVE-2014-8625</td>
+		<td>6.8</td>
+		<td>0</td>
+	</tr>
+	
+	<tr>
+		<td>44</td>
+		<td>CVE-2012-6702</td>
+		<td>4.3</td>
+		<td>5.9</td>
+	</tr>
+	
+	<tr>
+		<td>45</td>
+		<td>CVE-2013-0340</td>
+		<td>6.8</td>
+		<td>0</td>
+	</tr>
+	
+	<tr>
+		<td>46</td>
+		<td>CVE-2016-0718</td>
+		<td>7.5</td>
+		<td>9.8</td>
+	</tr>
+	
+	<tr>
+		<td>47</td>
+		<td>CVE-2014-9938</td>
+		<td>6.8</td>
+		<td>8.8</td>
+	</tr>
+	
+	<tr>
+		<td>48</td>
+		<td>CVE-2015-7082</td>
+		<td>10</td>
+		<td>0</td>
+	</tr>
+	
+	<tr>
+		<td>49</td>
+		<td>CVE-2015-7545</td>
+		<td>7.5</td>
+		<td>9.8</td>
+	</tr>
+	
+	<tr>
+		<td>50</td>
+		<td>CVE-2016-2324</td>
+		<td>10</td>
+		<td>9.8</td>
+	</tr>
+	
+	<tr>
+		<td>51</td>
+		<td>CVE-2017-1000117</td>
+		<td>6.8</td>
+		<td>8.8</td>
+	</tr>
+	
+	<tr>
+		<td>52</td>
+		<td>CVE-2017-14867</td>
+		<td>9</td>
+		<td>8.8</td>
+	</tr>
+	
+	<tr>
+		<td>53</td>
+		<td>CVE-2018-1000021</td>
+		<td>6.8</td>
+		<td>8.8</td>
+	</tr>
+	
+	<tr>
+		<td>54</td>
+		<td>CVE-2015-7547</td>
+		<td>6.8</td>
+		<td>8.1</td>
+	</tr>
+	
+	<tr>
+		<td>55</td>
+		<td>CVE-2017-16997</td>
+		<td>9.3</td>
+		<td>7.8</td>
+	</tr>
+	
+	<tr>
+		<td>56</td>
+		<td>CVE-2016-6323</td>
+		<td>5</td>
+		<td>7.5</td>
+	</tr>
+	
+	<tr>
+		<td>57</td>
+		<td>CVE-2016-10228</td>
+		<td>4.3</td>
+		<td>5.9</td>
+	</tr>
+	
+	<tr>
+		<td>58</td>
+		<td>CVE-2018-1000001</td>
+		<td>7.2</td>
+		<td>7.8</td>
+	</tr>
+	
+	<tr>
+		<td>59</td>
+		<td>CVE-2016-3075</td>
+		<td>5</td>
+		<td>7.5</td>
+	</tr>
+	
+	<tr>
+		<td>60</td>
+		<td>CVE-2016-5417</td>
+		<td>5</td>
+		<td>7.5</td>
+	</tr>
+	
+	<tr>
+		<td>61</td>
+		<td>CVE-2016-3706</td>
+		<td>5</td>
+		<td>7.5</td>
+	</tr>
+	
+	<tr>
+		<td>62</td>
+		<td>CVE-2016-4429</td>
+		<td>7.5</td>
+		<td>9.8</td>
+	</tr>
+	
+	<tr>
+		<td>63</td>
+		<td>CVE-2017-1000366</td>
+		<td>7.2</td>
+		<td>7.8</td>
+	</tr>
+	
+	<tr>
+		<td>64</td>
+		<td>CVE-2017-12132</td>
+		<td>4.3</td>
+		<td>5.9</td>
+	</tr>
+	
+	<tr>
+		<td>65</td>
+		<td>CVE-2017-12133</td>
+		<td>4.3</td>
+		<td>5.9</td>
+	</tr>
+	
+	<tr>
+		<td>66</td>
+		<td>CVE-2014-8121</td>
+		<td>5</td>
+		<td>0</td>
+	</tr>
+	
+	<tr>
+		<td>67</td>
+		<td>CVE-2017-15670</td>
+		<td>7.5</td>
+		<td>9.8</td>
+	</tr>
+	
+	<tr>
+		<td>68</td>
+		<td>CVE-2017-15671</td>
+		<td>4.3</td>
+		<td>5.9</td>
+	</tr>
+	
+	<tr>
+		<td>69</td>
+		<td>CVE-2017-15804</td>
+		<td>7.5</td>
+		<td>9.8</td>
+	</tr>
+	
+	<tr>
+		<td>70</td>
+		<td>CVE-2014-9761</td>
+		<td>7.5</td>
+		<td>9.8</td>
+	</tr>
+	
+	<tr>
+		<td>71</td>
+		<td>CVE-2014-9984</td>
+		<td>7.5</td>
+		<td>9.8</td>
+	</tr>
+	
+	<tr>
+		<td>72</td>
+		<td>CVE-2015-1781</td>
+		<td>6.8</td>
+		<td>0</td>
+	</tr>
+	
+	<tr>
+		<td>73</td>
+		<td>CVE-2015-8776</td>
+		<td>6.4</td>
+		<td>9.1</td>
+	</tr>
+	
+	<tr>
+		<td>74</td>
+		<td>CVE-2015-8777</td>
+		<td>2.1</td>
+		<td>5.5</td>
+	</tr>
+	
+	<tr>
+		<td>75</td>
+		<td>CVE-2015-8778</td>
+		<td>7.5</td>
+		<td>9.8</td>
+	</tr>
+	
+	<tr>
+		<td>76</td>
+		<td>CVE-2015-8779</td>
+		<td>7.5</td>
+		<td>9.8</td>
+	</tr>
+	
+	<tr>
+		<td>77</td>
+		<td>CVE-2015-5180</td>
+		<td>5</td>
+		<td>7.5</td>
+	</tr>
+	
+	<tr>
+		<td>78</td>
+		<td>CVE-2015-8982</td>
+		<td>6.8</td>
+		<td>8.1</td>
+	</tr>
+	
+	<tr>
+		<td>79</td>
+		<td>CVE-2015-8983</td>
+		<td>6.8</td>
+		<td>8.1</td>
+	</tr>
+	
+	<tr>
+		<td>80</td>
+		<td>CVE-2015-8984</td>
+		<td>4.3</td>
+		<td>5.9</td>
+	</tr>
+	
+	<tr>
+		<td>81</td>
+		<td>CVE-2018-6485</td>
+		<td>7.5</td>
+		<td>9.8</td>
+	</tr>
+	
+	<tr>
+		<td>82</td>
+		<td>CVE-2017-17439</td>
+		<td>5</td>
+		<td>7.5</td>
+	</tr>
+	
+	<tr>
+		<td>83</td>
+		<td>CVE-2017-6594</td>
+		<td>5</td>
+		<td>7.5</td>
+	</tr>
+	
+	<tr>
+		<td>84</td>
+		<td>CVE-2017-11103</td>
+		<td>6.8</td>
+		<td>8.1</td>
+	</tr>
+	
+	<tr>
+		<td>85</td>
+		<td>CVE-2017-6594</td>
+		<td>5</td>
+		<td>7.5</td>
+	</tr>
+	
+	<tr>
+		<td>86</td>
+		<td>CVE-2017-11103</td>
+		<td>6.8</td>
+		<td>8.1</td>
+	</tr>
+	
+	<tr>
+		<td>87</td>
+		<td>CVE-2017-17439</td>
+		<td>5</td>
+		<td>7.5</td>
+	</tr>
+	
+	<tr>
+		<td>88</td>
+		<td>CVE-2015-2695</td>
+		<td>7.1</td>
+		<td>0</td>
+	</tr>
+	
+	<tr>
+		<td>89</td>
+		<td>CVE-2015-2696</td>
+		<td>7.1</td>
+		<td>0</td>
+	</tr>
+	
+	<tr>
+		<td>90</td>
+		<td>CVE-2015-2697</td>
+		<td>6.8</td>
+		<td>0</td>
+	</tr>
+	
+	<tr>
+		<td>91</td>
+		<td>CVE-2015-8629</td>
+		<td>2.1</td>
+		<td>3.1</td>
+	</tr>
+	
+	<tr>
+		<td>92</td>
+		<td>CVE-2015-8631</td>
+		<td>6.8</td>
+		<td>6.5</td>
+	</tr>
+	
+	<tr>
+		<td>93</td>
+		<td>CVE-2017-15088</td>
+		<td>7.5</td>
+		<td>9.8</td>
+	</tr>
+	
+	<tr>
+		<td>94</td>
+		<td>CVE-2018-5709</td>
+		<td>5</td>
+		<td>7.5</td>
+	</tr>
+	
+	<tr>
+		<td>95</td>
+		<td>CVE-2018-5710</td>
+		<td>4</td>
+		<td>6.5</td>
+	</tr>
+	
+	<tr>
+		<td>96</td>
+		<td>CVE-2015-7511</td>
+		<td>1.9</td>
+		<td>2.0</td>
+	</tr>
+	
+	<tr>
+		<td>97</td>
+		<td>CVE-2016-6313</td>
+		<td>5</td>
+		<td>5.3</td>
+	</tr>
+	
+	<tr>
+		<td>98</td>
+		<td>CVE-2017-0379</td>
+		<td>5</td>
+		<td>7.5</td>
+	</tr>
+	
+	<tr>
+		<td>99</td>
+		<td>CVE-2017-9526</td>
+		<td>4.3</td>
+		<td>5.9</td>
+	</tr>
+	
+	<tr>
+		<td>100</td>
+		<td>CVE-2018-6829</td>
+		<td>5</td>
+		<td>7.5</td>
+	</tr>
+	
+	<tr>
+		<td>101</td>
+		<td>CVE-2015-8472</td>
+		<td>7.5</td>
+		<td>7.3</td>
+	</tr>
+	
+	<tr>
+		<td>102</td>
+		<td>CVE-2015-8540</td>
+		<td>9.3</td>
+		<td>8.8</td>
+	</tr>
+	
+	<tr>
+		<td>103</td>
+		<td>CVE-2016-10087</td>
+		<td>5</td>
+		<td>7.5</td>
+	</tr>
+	
+	<tr>
+		<td>104</td>
+		<td>CVE-2015-3622</td>
+		<td>4.3</td>
+		<td>0</td>
+	</tr>
+	
+	<tr>
+		<td>105</td>
+		<td>CVE-2016-4008</td>
+		<td>4.3</td>
+		<td>5.9</td>
+	</tr>
+	
+	<tr>
+		<td>106</td>
+		<td>CVE-2017-10790</td>
+		<td>5</td>
+		<td>7.5</td>
+	</tr>
+	
+	<tr>
+		<td>107</td>
+		<td>CVE-2018-6003</td>
+		<td>5</td>
+		<td>7.5</td>
+	</tr>
+	
+	<tr>
+		<td>108</td>
+		<td>CVE-2016-7942</td>
+		<td>7.5</td>
+		<td>9.8</td>
+	</tr>
+	
+	<tr>
+		<td>109</td>
+		<td>CVE-2016-7943</td>
+		<td>7.5</td>
+		<td>9.8</td>
+	</tr>
+	
+	<tr>
+		<td>110</td>
+		<td>CVE-2015-3238</td>
+		<td>5.8</td>
+		<td>6.5</td>
+	</tr>
+	
+	<tr>
+		<td>111</td>
+		<td>CVE-2017-13729</td>
+		<td>4.3</td>
+		<td>6.5</td>
+	</tr>
+	
+	<tr>
+		<td>112</td>
+		<td>CVE-2017-10684</td>
+		<td>7.5</td>
+		<td>9.8</td>
+	</tr>
+	
+	<tr>
+		<td>113</td>
+		<td>CVE-2017-11113</td>
+		<td>5</td>
+		<td>7.5</td>
+	</tr>
+	
+	<tr>
+		<td>114</td>
+		<td>CVE-2017-13728</td>
+		<td>4.3</td>
+		<td>7.5</td>
+	</tr>
+	
+	<tr>
+		<td>115</td>
+		<td>CVE-2017-13732</td>
+		<td>4.3</td>
+		<td>6.5</td>
+	</tr>
+	
+	<tr>
+		<td>116</td>
+		<td>CVE-2017-13733</td>
+		<td>4.3</td>
+		<td>6.5</td>
+	</tr>
+	
+	<tr>
+		<td>117</td>
+		<td>CVE-2017-10685</td>
+		<td>7.5</td>
+		<td>9.8</td>
+	</tr>
+	
+	<tr>
+		<td>118</td>
+		<td>CVE-2017-11112</td>
+		<td>5</td>
+		<td>7.5</td>
+	</tr>
+	
+	<tr>
+		<td>119</td>
+		<td>CVE-2017-13730</td>
+		<td>4.3</td>
+		<td>6.5</td>
+	</tr>
+	
+	<tr>
+		<td>120</td>
+		<td>CVE-2017-13731</td>
+		<td>4.3</td>
+		<td>6.5</td>
+	</tr>
+	
+	<tr>
+		<td>121</td>
+		<td>CVE-2017-16879</td>
+		<td>6.8</td>
+		<td>7.8</td>
+	</tr>
+	
+	<tr>
+		<td>122</td>
+		<td>CVE-2017-13734</td>
+		<td>4.3</td>
+		<td>6.5</td>
+	</tr>
+	
+	<tr>
+		<td>123</td>
+		<td>CVE-2013-4449</td>
+		<td>4.3</td>
+		<td>0</td>
+	</tr>
+	
+	<tr>
+		<td>124</td>
+		<td>CVE-2015-1545</td>
+		<td>5</td>
+		<td>0</td>
+	</tr>
+	
+	<tr>
+		<td>125</td>
+		<td>CVE-2012-2668</td>
+		<td>4.3</td>
+		<td>0</td>
+	</tr>
+	
+	<tr>
+		<td>126</td>
+		<td>CVE-2015-6908</td>
+		<td>5</td>
+		<td>0</td>
+	</tr>
+	
+	<tr>
+		<td>127</td>
+		<td>CVE-2017-14159</td>
+		<td>1.9</td>
+		<td>4.7</td>
+	</tr>
+	
+	<tr>
+		<td>128</td>
+		<td>CVE-2017-17740</td>
+		<td>5</td>
+		<td>7.5</td>
+	</tr>
+	
+	<tr>
+		<td>129</td>
+		<td>CVE-2017-9287</td>
+		<td>4</td>
+		<td>6.5</td>
+	</tr>
+	
+	<tr>
+		<td>130</td>
+		<td>CVE-2015-5352</td>
+		<td>4.3</td>
+		<td>0</td>
+	</tr>
+	
+	<tr>
+		<td>131</td>
+		<td>CVE-2015-5600</td>
+		<td>8.5</td>
+		<td>0</td>
+	</tr>
+	
+	<tr>
+		<td>132</td>
+		<td>CVE-2015-6563</td>
+		<td>1.9</td>
+		<td>0</td>
+	</tr>
+	
+	<tr>
+		<td>133</td>
+		<td>CVE-2015-6564</td>
+		<td>6.9</td>
+		<td>0</td>
+	</tr>
+	
+	<tr>
+		<td>134</td>
+		<td>CVE-2016-6302</td>
+		<td>5</td>
+		<td>7.5</td>
+	</tr>
+	
+	<tr>
+		<td>135</td>
+		<td>CVE-2016-6303</td>
+		<td>7.5</td>
+		<td>9.8</td>
+	</tr>
+	
+	<tr>
+		<td>136</td>
+		<td>CVE-2016-6304</td>
+		<td>7.8</td>
+		<td>7.5</td>
+	</tr>
+	
+	<tr>
+		<td>137</td>
+		<td>CVE-2016-6306</td>
+		<td>4.3</td>
+		<td>5.9</td>
+	</tr>
+	
+	<tr>
+		<td>138</td>
+		<td>CVE-2017-3735</td>
+		<td>5</td>
+		<td>5.3</td>
+	</tr>
+	
+	<tr>
+		<td>139</td>
+		<td>CVE-2014-8176</td>
+		<td>7.5</td>
+		<td>0</td>
+	</tr>
+	
+	<tr>
+		<td>140</td>
+		<td>CVE-2015-1788</td>
+		<td>4.3</td>
+		<td>0</td>
+	</tr>
+	
+	<tr>
+		<td>141</td>
+		<td>CVE-2015-1789</td>
+		<td>4.3</td>
+		<td>7.5</td>
+	</tr>
+	
+	<tr>
+		<td>142</td>
+		<td>CVE-2015-1790</td>
+		<td>5</td>
+		<td>0</td>
+	</tr>
+	
+	<tr>
+		<td>143</td>
+		<td>CVE-2015-1791</td>
+		<td>6.8</td>
+		<td>0</td>
+	</tr>
+	
+	<tr>
+		<td>144</td>
+		<td>CVE-2015-1792</td>
+		<td>5</td>
+		<td>0</td>
+	</tr>
+	
+	<tr>
+		<td>145</td>
+		<td>CVE-2015-3194</td>
+		<td>5</td>
+		<td>7.5</td>
+	</tr>
+	
+	<tr>
+		<td>146</td>
+		<td>CVE-2015-3195</td>
+		<td>5</td>
+		<td>5.3</td>
+	</tr>
+	
+	<tr>
+		<td>147</td>
+		<td>CVE-2015-3196</td>
+		<td>4.3</td>
+		<td>0</td>
+	</tr>
+	
+	<tr>
+		<td>148</td>
+		<td>CVE-2015-3197</td>
+		<td>4.3</td>
+		<td>5.9</td>
+	</tr>
+	
+	<tr>
+		<td>149</td>
+		<td>CVE-2016-0702</td>
+		<td>1.9</td>
+		<td>5.1</td>
+	</tr>
+	
+	<tr>
+		<td>150</td>
+		<td>CVE-2016-0703</td>
+		<td>4.3</td>
+		<td>5.9</td>
+	</tr>
+	
+	<tr>
+		<td>151</td>
+		<td>CVE-2016-0704</td>
+		<td>4.3</td>
+		<td>5.9</td>
+	</tr>
+	
+	<tr>
+		<td>152</td>
+		<td>CVE-2016-0705</td>
+		<td>10</td>
+		<td>9.8</td>
+	</tr>
+	
+	<tr>
+		<td>153</td>
+		<td>CVE-2016-0797</td>
+		<td>5</td>
+		<td>7.5</td>
+	</tr>
+	
+	<tr>
+		<td>154</td>
+		<td>CVE-2016-0798</td>
+		<td>7.8</td>
+		<td>7.5</td>
+	</tr>
+	
+	<tr>
+		<td>155</td>
+		<td>CVE-2016-0799</td>
+		<td>10</td>
+		<td>9.8</td>
+	</tr>
+	
+	<tr>
+		<td>156</td>
+		<td>CVE-2016-0800</td>
+		<td>4.3</td>
+		<td>5.9</td>
+	</tr>
+	
+	<tr>
+		<td>157</td>
+		<td>CVE-2016-2177</td>
+		<td>7.5</td>
+		<td>9.8</td>
+	</tr>
+	
+	<tr>
+		<td>158</td>
+		<td>CVE-2016-2178</td>
+		<td>2.1</td>
+		<td>5.5</td>
+	</tr>
+	
+	<tr>
+		<td>159</td>
+		<td>CVE-2016-2179</td>
+		<td>5</td>
+		<td>7.5</td>
+	</tr>
+	
+	<tr>
+		<td>160</td>
+		<td>CVE-2016-2180</td>
+		<td>5</td>
+		<td>7.5</td>
+	</tr>
+	
+	<tr>
+		<td>161</td>
+		<td>CVE-2016-2181</td>
+		<td>5</td>
+		<td>7.5</td>
+	</tr>
+	
+	<tr>
+		<td>162</td>
+		<td>CVE-2016-2182</td>
+		<td>7.5</td>
+		<td>9.8</td>
+	</tr>
+	
+	<tr>
+		<td>163</td>
+		<td>CVE-2016-2183</td>
+		<td>5</td>
+		<td>7.5</td>
+	</tr>
+	
+	<tr>
+		<td>164</td>
+		<td>CVE-2016-2842</td>
+		<td>10</td>
+		<td>9.8</td>
+	</tr>
+	
+	<tr>
+		<td>165</td>
+		<td>CVE-2015-4000</td>
+		<td>4.3</td>
+		<td>3.7</td>
+	</tr>
+	
+	<tr>
+		<td>166</td>
+		<td>CVE-2016-2105</td>
+		<td>5</td>
+		<td>7.5</td>
+	</tr>
+	
+	<tr>
+		<td>167</td>
+		<td>CVE-2016-2106</td>
+		<td>5</td>
+		<td>7.5</td>
+	</tr>
+	
+	<tr>
+		<td>168</td>
+		<td>CVE-2016-2107</td>
+		<td>2.6</td>
+		<td>5.9</td>
+	</tr>
+	
+	<tr>
+		<td>169</td>
+		<td>CVE-2016-2108</td>
+		<td>10</td>
+		<td>9.8</td>
+	</tr>
+	
+	<tr>
+		<td>170</td>
+		<td>CVE-2016-2109</td>
+		<td>7.8</td>
+		<td>7.5</td>
+	</tr>
+	
+	<tr>
+		<td>171</td>
+		<td>CVE-2016-2176</td>
+		<td>6.4</td>
+		<td>8.2</td>
+	</tr>
+	
+	<tr>
+		<td>172</td>
+		<td>CVE-2016-10713</td>
+		<td>4.3</td>
+		<td>5.5</td>
+	</tr>
+	
+	<tr>
+		<td>173</td>
+		<td>CVE-2014-9637</td>
+		<td>7.1</td>
+		<td>5.5</td>
+	</tr>
+	
+	<tr>
+		<td>174</td>
+		<td>CVE-2015-1395</td>
+		<td>7.8</td>
+		<td>7.5</td>
+	</tr>
+	
+	<tr>
+		<td>175</td>
+		<td>CVE-2018-6952</td>
+		<td>5</td>
+		<td>7.5</td>
+	</tr>
+	
+	<tr>
+		<td>176</td>
+		<td>CVE-2018-6951</td>
+		<td>5</td>
+		<td>7.5</td>
+	</tr>
+	
+	<tr>
+		<td>177</td>
+		<td>CVE-2017-6004</td>
+		<td>5</td>
+		<td>7.5</td>
+	</tr>
+	
+	<tr>
+		<td>178</td>
+		<td>CVE-2016-1238</td>
+		<td>7.2</td>
+		<td>7.8</td>
+	</tr>
+	
+	<tr>
+		<td>179</td>
+		<td>CVE-2013-7422</td>
+		<td>7.5</td>
+		<td>0</td>
+	</tr>
+	
+	<tr>
+		<td>180</td>
+		<td>CVE-2017-12837</td>
+		<td>5</td>
+		<td>7.5</td>
+	</tr>
+	
+	<tr>
+		<td>181</td>
+		<td>CVE-2017-12883</td>
+		<td>6.4</td>
+		<td>9.1</td>
+	</tr>
+	
+	<tr>
+		<td>182</td>
+		<td>CVE-2016-0772</td>
+		<td>5.8</td>
+		<td>6.5</td>
+	</tr>
+	
+	<tr>
+		<td>183</td>
+		<td>CVE-2016-2183</td>
+		<td>5</td>
+		<td>7.5</td>
+	</tr>
+	
+	<tr>
+		<td>184</td>
+		<td>CVE-2016-5636</td>
+		<td>10</td>
+		<td>9.8</td>
+	</tr>
+	
+	<tr>
+		<td>185</td>
+		<td>CVE-2016-5699</td>
+		<td>4.3</td>
+		<td>6.1</td>
+	</tr>
+	
+	<tr>
+		<td>186</td>
+		<td>CVE-2014-2667</td>
+		<td>3.3</td>
+		<td>0</td>
+	</tr>
+	
+	<tr>
+		<td>187</td>
+		<td>CVE-2014-4616</td>
+		<td>4.3</td>
+		<td>5.9</td>
+	</tr>
+	
+	<tr>
+		<td>188</td>
+		<td>CVE-2014-9365</td>
+		<td>5.8</td>
+		<td>0</td>
+	</tr>
+	
+	<tr>
+		<td>189</td>
+		<td>CVE-2017-17522</td>
+		<td>6.8</td>
+		<td>8.8</td>
+	</tr>
+	
+	<tr>
+		<td>190</td>
+		<td>CVE-2018-5764</td>
+		<td>5</td>
+		<td>7.5</td>
+	</tr>
+	
+	<tr>
+		<td>191</td>
+		<td>CVE-2017-15994</td>
+		<td>7.5</td>
+		<td>9.8</td>
+	</tr>
+	
+	<tr>
+		<td>192</td>
+		<td>CVE-2017-17433</td>
+		<td>7.5</td>
+		<td>9.8</td>
+	</tr>
+	
+	<tr>
+		<td>193</td>
+		<td>CVE-2017-17434</td>
+		<td>7.5</td>
+		<td>9.8</td>
+	</tr>
+	
+	<tr>
+		<td>194</td>
+		<td>CVE-2015-8270</td>
+		<td>5</td>
+		<td>7.5</td>
+	</tr>
+	
+	<tr>
+		<td>195</td>
+		<td>CVE-2015-8271</td>
+		<td>7.5</td>
+		<td>9.8</td>
+	</tr>
+	
+	<tr>
+		<td>196</td>
+		<td>CVE-2015-8272</td>
+		<td>4.3</td>
+		<td>6.5</td>
+	</tr>
+	
+	<tr>
+		<td>197</td>
+		<td>CVE-2015-3170</td>
+		<td>2.1</td>
+		<td>5.5</td>
+	</tr>
+	
+	<tr>
+		<td>198</td>
+		<td>CVE-2017-12424</td>
+		<td>7.5</td>
+		<td>9.8</td>
+	</tr>
+	
+	<tr>
+		<td>199</td>
+		<td>CVE-2016-6252</td>
+		<td>4.6</td>
+		<td>7.8</td>
+	</tr>
+	
+	<tr>
+		<td>200</td>
+		<td>CVE-2018-7169</td>
+		<td>5</td>
+		<td>5.3</td>
+	</tr>
+	
+	<tr>
+		<td>201</td>
+		<td>CVE-2013-7443</td>
+		<td>5</td>
+		<td>0</td>
+	</tr>
+	
+	<tr>
+		<td>202</td>
+		<td>CVE-2017-10989</td>
+		<td>7.5</td>
+		<td>9.8</td>
+	</tr>
+	
+	<tr>
+		<td>203</td>
+		<td>CVE-2015-5602</td>
+		<td>7.2</td>
+		<td>0</td>
+	</tr>
+	
+	<tr>
+		<td>204</td>
+		<td>CVE-2017-1000367</td>
+		<td>6.9</td>
+		<td>6.4</td>
+	</tr>
+	
+	<tr>
+		<td>205</td>
+		<td>CVE-2017-1000368</td>
+		<td>7.2</td>
+		<td>8.2</td>
+	</tr>
+	
+	<tr>
+		<td>206</td>
+		<td>CVE-2016-7795</td>
+		<td>4.9</td>
+		<td>5.5</td>
+	</tr>
+	
+	<tr>
+		<td>207</td>
+		<td>CVE-2017-1000082</td>
+		<td>10</td>
+		<td>9.8</td>
+	</tr>
+	
+	<tr>
+		<td>208</td>
+		<td>CVE-2017-9217</td>
+		<td>5</td>
+		<td>7.5</td>
+	</tr>
+	
+	<tr>
+		<td>209</td>
+		<td>CVE-2017-9445</td>
+		<td>5</td>
+		<td>7.5</td>
+	</tr>
+	
+	<tr>
+		<td>210</td>
+		<td>CVE-2018-1049</td>
+		<td>4.3</td>
+		<td>5.9</td>
+	</tr>
+	
+	<tr>
+		<td>211</td>
+		<td>CVE-2016-10156</td>
+		<td>7.2</td>
+		<td>7.8</td>
+	</tr>
+	
+	<tr>
+		<td>212</td>
+		<td>CVE-2016-7796</td>
+		<td>4.9</td>
+		<td>5.5</td>
+	</tr>
+	
+	<tr>
+		<td>213</td>
+		<td>CVE-2017-18078</td>
+		<td>4.6</td>
+		<td>7.8</td>
+	</tr>
+	
+	<tr>
+		<td>214</td>
+		<td>CVE-2015-7510</td>
+		<td>7.5</td>
+		<td>9.8</td>
+	</tr>
+	
+	<tr>
+		<td>215</td>
+		<td>CVE-2017-15908</td>
+		<td>5</td>
+		<td>7.5</td>
+	</tr>
+	
+	<tr>
+		<td>216</td>
+		<td>CVE-2014-9114</td>
+		<td>7.2</td>
+		<td>7.8</td>
+	</tr>
+	
+	<tr>
+		<td>217</td>
+		<td>CVE-2016-1248</td>
+		<td>6.8</td>
+		<td>7.8</td>
+	</tr>
+	
+	<tr>
+		<td>218</td>
+		<td>CVE-2017-5953</td>
+		<td>7.5</td>
+		<td>9.8</td>
+	</tr>
+	
+	<tr>
+		<td>219</td>
+		<td>CVE-2017-17087</td>
+		<td>2.1</td>
+		<td>5.5</td>
+	</tr>
+	
+	<tr>
+		<td>220</td>
+		<td>CVE-2017-6349</td>
+		<td>7.5</td>
+		<td>9.8</td>
+	</tr>
+	
+	<tr>
+		<td>221</td>
+		<td>CVE-2017-11109</td>
+		<td>6.8</td>
+		<td>7.8</td>
+	</tr>
+	
+	<tr>
+		<td>222</td>
+		<td>CVE-2017-6350</td>
+		<td>7.5</td>
+		<td>9.8</td>
+	</tr>
+	
+	<tr>
+		<td>223</td>
+		<td>CVE-2016-9840</td>
+		<td>6.8</td>
+		<td>8.8</td>
+	</tr>
+	
+	<tr>
+		<td>224</td>
+		<td>CVE-2016-9841</td>
+		<td>7.5</td>
+		<td>9.8</td>
+	</tr>
+	
+	<tr>
+		<td>225</td>
+		<td>CVE-2016-9842</td>
+		<td>6.8</td>
+		<td>8.8</td>
+	</tr>
+	
+	<tr>
+		<td>226</td>
+		<td>CVE-2016-9843</td>
+		<td>7.5</td>
+		<td>9.8</td>
+	</tr>
+	
+	</table>
+</body>
+</html>
